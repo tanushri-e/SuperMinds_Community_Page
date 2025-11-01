@@ -1,0 +1,298 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 160px;
+    margin-right: 45px;
+    margin-left: 20px;
+}
+
+.welcome {
+    padding: 100px 20px 20px; /* Padding top to accommodate fixed header */
+    font-style: italic;
+    font-size: 25px;
+    text-align: center;
+}
+
+.search-bar {
+    margin-top: 20px;
+}
+
+.search-bar input {
+    padding: 10px;
+    width: 450px;
+    margin-right: 10px;
+    border-radius: 25px;
+    transition: 0.4s ease-in-out;
+}
+
+.search-bar input:focus{
+    width:550px;
+}
+
+.search-bar button {
+    padding: 10px;
+    width: 5vw;
+}
+
+.categories {
+    padding: 20px;
+    text-align: center;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px;
+}
+
+.card-link {
+    text-decoration: none; 
+    color: inherit; 
+}
+
+.card {
+    background-color: #f4f4f4;
+    width: 70%;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 150px; /* Adjusted height for better layout with image */
+    transition: transform 0.6s ease, background-color 0.6s ease, color 0.6s ease;
+    cursor: pointer; /* Pointer cursor to indicate clickable area */
+}
+
+.card:hover {
+    transform: translateY(-20px);
+    background-color: #d1e0e0; /* Lighter shade for the background on hover */
+    color: #333; /* Darker shade for the text on hover */
+}
+
+.card-image {
+    max-width: 80%;
+    height: auto;
+    border-radius: 8px 8px 0 0; /* Rounded top corners */
+    margin-bottom: 10px; /* Space between image and title */
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+.connect {
+    display: grid;
+    place-items: center;
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+
+.connect .social-icon{
+    display: inline-flex;
+    padding: 20px 70px;
+    margin: auto;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.connect .social-icon span{
+height: 60px;
+width: 60px;
+display: block;
+background: #fff;
+border-radius: 50%;
+box-shadow: 0 10px 10ox rgba(0,0,0,0.1);
+}
+
+.connect .social-icon span i{
+    font-size: 25px;
+    line-height: 60px;
+}
+
+.social-icon a{
+    text-decoration: none;
+    color: #333;
+}
+
+.connect .social-icon .tooltip {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    background: #fff;
+    color: #fff;
+    padding: 10px 18px;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 25px;
+    opacity: 0;
+    pointer-events: none;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  .connect .social-icon:hover .tooltip {
+    top: -70px;
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .social-icon .tooltip:before {
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    background: inherit;
+    left: 50%;
+    bottom: -6px;
+    transform: translateX(-50%) rotate(45deg);
+  }
+  .connect .social-icon:hover span {
+    color: #fff;
+  }
+  .connect .social-icon:hover span,
+  .connect .social-icon:hover .tooltip {
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.4);
+  }
+  
+  .connect .facebook:hover span,
+.connect .facebook:hover .tooltip {
+  background: #3B5999;
+}
+.connect .twitter:hover span,
+.connect .twitter:hover .tooltip {
+  background: #46C1F6;
+}
+.connect .instagram:hover span,
+.connect .instagram:hover .tooltip {
+  background: #e1306c;
+}
+
+.connect .youtube:hover span,
+.connect .youtube:hover .tooltip {
+  background: #DE463B;
+}
+
+.comment-section {
+    width: 80%; 
+    max-width: 70%; 
+    margin: 0 auto; 
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.comment-section h2 {
+    text-align: center;
+    color: #333;
+}
+
+#commentForm {
+    display: flex;
+    flex-direction: column;
+}
+
+#commentInput, .reply-input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    resize: none;
+    width: 98%; /* Full width for responsiveness */
+}
+
+button, .reply-submit {
+    padding: 10px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    width: 15%;
+    align-self: center; 
+}
+
+button:hover, .reply-submit:hover {
+    background-color: #0056b3;
+}
+
+#commentsContainer {
+    margin-top: 20px;
+}
+
+.comment, .reply {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.comment .reply-button {
+    font-size: 0.9em;
+    color: #007bff;
+    cursor: pointer;
+    margin-top: 5px;
+    display: inline-block;
+}
+
+.reply-form {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.reply {
+    margin-top: 10px;
+    padding-left: 20px;
+    padding-top: 5px;
+    border-left: 2px solid #ddd;
+}
+
+@media (max-width: 600px) {
+    .comment-section {
+        padding: 15px;
+        width: 95%; /* Increase width to occupy more space on smaller screens */
+    }
+}
+
+    
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #333;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+
+
+@media (max-width: 600px) {
+    .search-bar input {
+        width: 80%;
+    }
+}

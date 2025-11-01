@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    text-align: center;
+    background: white;
+    color: black;
+    padding: 2rem;
+    width: 100%;
+}
+
+header h1 {
+    font-size: 3rem;
+    color: #353635;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+header .quote {
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: bold;
+    color: #555;
+}
+
+.logo{
+    width: 160px;
+    position: absolute; top:8px; left:16px; 
+}
+
+.intro,
+.suggestion-box,
+.suggestions-info {
+    max-width: 800px;
+    margin: 2rem;
+    padding: 1.5rem;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+.suggestion-box {
+    background: #FFF3CD;
+}
+
+.suggestion-box form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+}
+
+button {
+    background-color: #6C63FF;
+    color: white;
+    border: none;
+    padding: 0.8rem;
+    margin-top: 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #5A54E6;
+}
+
+.suggestions-info ul {
+    margin-top: 1rem;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #333;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+
+@media (max-width: 768px) {
+    .header,
+    .intro,
+    .suggestion-box,
+    .suggestions-info {
+        padding: 1rem;
+        margin: 1rem;
+    }
+
+    h1, h2, h3 {
+        font-size: 1.2rem;
+    }
+
+    button {
+        font-size: 0.9rem;
+    }
+}

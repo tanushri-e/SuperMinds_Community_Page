@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Superminds</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/></head>
+<body>
+    <header>
+        <img src ="E:\Lang Learning Platform\Images\Logo.jpg" class="logo">
+    </header>
+
+    <section class="welcome">
+        <h1><b>Super Minds Community</b></h1>
+        <p>We're happy to have you here.</p>
+        <p>If you need help, please search before you post.</p><br>
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+            <button type="button">Search</button>
+        </div>
+    </section>
+
+    <section class="categories">
+        <h2>Top Categories</h2><br>
+        <div class="card-container">
+            <a href="start-here.html" class="card-link">
+                <div class="card">
+                    <img src="https://cdn.coda.io/icons/svg/color/empty-flag.svg" alt="Start Here" class="card-image">
+                    <div class="card-title">Start Here!</div>
+                </div>
+            </a>
+            
+            <a href="ask-community.html" class="card-link">
+                <div class="card">
+                    <img src="https://cdn.coda.io/icons/svg/color/ask-question.svg" alt="Ask Community" class="card-image">
+                    <div class="card-title">Ask Community</div>
+                </div>
+            </a>
+            <a href="suggestion-box.html" class="card-link">
+                <div class="card">
+                    <img src="https://cdn.coda.io/icons/svg/color/checked-checkbox.svg" alt="Suggestion Box" class="card-image">
+                    <div class="card-title">Suggestion Box</div>
+                </div>
+            </a>
+        </div>
+    </section>
+    
+    <br>
+    <div class="comment-section">
+        <h2>Leave a Comment</h2>
+        <form id="commentForm">
+            <textarea id="commentInput" placeholder="Write your comment here..." required></textarea>
+            <button type="submit">Post Comment</button>
+        </form>
+        <div id="commentsContainer"></div>
+    </div>
+
+    <script src="script.js"></script>
+
+
+    <section class="connect">
+        <h2>Connect & Grow with us!</h2>
+        <div class="social-icon">
+            <div class="icon facebook">
+            <div class="tooltip">facebook</div>
+            <a href="https://www.facebook.com" target="_blank"><span><i class="fab fa-facebook"></i></span></a>
+            </div>
+
+            <div class="icon instagram">
+            <div class="tooltip">instagram</div>
+            <a href="https://www.instagram.com" target="_blank"><span><i class="fab fa-instagram"></i></span></a>
+            </div>
+            <div class="icon youtube">
+            <div class="tooltip">youtube</div>
+            <a href="https://www.youtube.com" target="_blank"><span><i class="fab fa-youtube"></i></span></a>
+        </div>
+
+            <div class="icon twitter">
+            <div class="tooltip">twitter</div>
+            <a href="https://www.twitter.com" target="_blank"><span><i class="fab fa-twitter"></i></span></a>
+        </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Superminds - All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: #fdfeff;
+    color: #0e0b0b;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3rem;
+    color: #353635;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+header .quote {
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: bold;
+    color: #555;
+}
+.logo {
+    width: 160px;
+    position: absolute; top:8px; left:16px; 
+
+}
+
+main {
+    padding: 20px;
+}
+
+h2, h3 {
+    margin-top: 20px;
+}
+
+ .features, .cool-features, .target-users, .chat {
+    background: #ffffff;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    background: #35424a;
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #45687d;
+}
+
+.chat-container {
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+}
+
+#messages {
+    height: 150px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+#userInput {
+    width: 80%;
+    padding: 5px;
+}
+
+.cool-features li{
+    margin-left: 20px;
+
+}
+
+.features li{
+    margin-left: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #35424a;
+    color: #ffffff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
